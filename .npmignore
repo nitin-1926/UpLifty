@@ -1,0 +1,39 @@
+# Development files
+examples/
+docs/
+src/
+.git/
+.github/
+.vscode/
+
+# Configuration files
+.eslintrc.cjs
+.prettierrc
+tsconfig.json
+
+# macOS
+.DS_Store
+
+# Tests
+__tests__/
+coverage/
+jest.config.js
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.*
+
+# Build process
+.travis.yml
+.gitlab-ci.yml
+
+node_modules
+tsconfig.app.json
+tsconfig.node.json
+vite.config.ts
