@@ -1,6 +1,9 @@
 {
-	"name": "uplifty",
-	"version": "0.1.0",
+	"name": "@nitin-1926/uplifty",
+	"version": "1.0.0",
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com"
+	},
 	"description": "A versatile and intuitive file upload library for cloud storage services",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
