@@ -1,26 +1,27 @@
 {
-	"name": "@nitin-1926/uplifty",
-	"version": "1.0.0",
-	"publishConfig": {
-		"registry": "https://npm.pkg.github.com"
-	},
+	"name": "uplifty",
+	"version": "0.1.1",
 	"description": "A versatile and intuitive file upload library for cloud storage services",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"type": "module",
+	"publishConfig": {
+		"access": "public"
+	},
 	"files": [
 		"dist"
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/nitin-1926/UpLifty.git"
+		"url": "git+https://github.com/nitin-1926/UpLifty.git"
 	},
 	"scripts": {
 		"build": "tsc",
 		"prepare": "npm run build",
 		"test": "jest",
 		"lint": "eslint src --ext .ts",
-		"docs": "typedoc"
+		"docs": "typedoc",
+		"publish:npm": "npm publish --registry=https://registry.npmjs.org/"
 	},
 	"keywords": [
 		"upload",
