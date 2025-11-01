@@ -1,15 +1,23 @@
 {
 	"name": "uplifty",
-	"version": "0.1.1",
-	"description": "A versatile and intuitive file upload library for cloud storage services",
+	"version": "0.2.0",
+	"description": "A simple and intuitive frontend file upload library for cloud storage services with support for AWS S3",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"type": "module",
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		}
+	},
 	"publishConfig": {
 		"access": "public"
 	},
 	"files": [
-		"dist"
+		"dist",
+		"README.md",
+		"LICENSE"
 	],
 	"repository": {
 		"type": "git",
@@ -33,7 +41,9 @@
 	"author": "Nitin Gupta",
 	"license": "MIT",
 	"dependencies": {
-		"aws-sdk": "^2.1692.0"
+		"@aws-sdk/client-s3": "^3.758.0",
+		"@aws-sdk/lib-storage": "^3.758.0",
+		"@aws-sdk/s3-request-presigner": "^3.916.0"
 	},
 	"devDependencies": {
 		"@types/jest": "^29.5.11",

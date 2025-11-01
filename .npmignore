@@ -1,39 +1,45 @@
-# Development files
-examples/
-docs/
+# Source files
 src/
-.git/
-.github/
-.vscode/
 
-# Configuration files
-.eslintrc.cjs
-.prettierrc
+# Examples and documentation
+examples/
+MIGRATION.md
+*.plan.md
+
+# Build config
 tsconfig.json
-
-# macOS
-.DS_Store
+.eslintrc*
+.prettierrc*
 
 # Tests
-__tests__/
+*.test.ts
+*.spec.ts
+**/__tests__/
 coverage/
-jest.config.js
 
-# Logs
-*.log
+# Development files
+.github/
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# CI/CD
+.travis.yml
+.circleci/
+.gitlab-ci.yml
+
+# Misc
+node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# Environment
+.DS_Store
 .env
-.env.*
-
-# Build process
-.travis.yml
-.gitlab-ci.yml
-
-node_modules
-tsconfig.app.json
-tsconfig.node.json
-vite.config.ts
+.env.local
+.npmrc

@@ -80,22 +80,13 @@ export interface ProgressEvent {
 }
 
 /**
- * File to be uploaded
- */
-export interface FileToUpload {
-	file: File;
-	id?: string;
-	path?: string;
-	metadata?: Record<string, string>;
-}
-
-/**
  * Upload options
  */
 export interface UploadOptions {
 	onProgress?: ProgressCallback;
 	folder?: string;
 	generateId?: boolean;
+	metadata?: Record<string, string>;
 }
 
 /**
