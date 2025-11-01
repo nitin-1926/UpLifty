@@ -1,6 +1,6 @@
 {
 	"name": "uplifty",
-	"version": "0.2.0",
+	"version": "1.0.0",
 	"description": "A simple and intuitive frontend file upload library for cloud storage services with support for AWS S3",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
